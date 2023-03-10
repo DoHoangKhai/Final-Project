@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+body{
+    background: #3D3B30;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#out{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    width: 380px;
+    height: auto;
+    margin: 20px 17px;
+    cursor: pointer;
+    transition: 1s ease;
+    background-color: #4D5061;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card img{
+    width: 100%;
+    background-color: #949B96;
+    height: fit-content;
+}
+
+.card:hover .image{
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.slider-frame{
+    overflow: hidden;
+    height: 400px;
+    width: 848px;
+    margin-left: 225px;
+    margin-top: 20px;
+    background-color: #212227;
+    border-radius: 2px;
+}
+
+.hov{
+    width: 848px;
+    height: 400px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 0%;
+    opacity: 0;
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hov h1, h3, p{
+    color: white;
+    margin-left: 25px;
+}
+
+.hov h1{
+
+    font-size: 2rem;
+}
+
+.hov p{
+    margin-top: 230px;
+}
+
+.img-container:hover .hov{
+    opacity: 1;
+}
+
+@-webkit-keyframes slide_animation{
+    0% {left:0px;}
+    10% {left:1050px;}
+    20% {left:2100px;}
+    30% {left:3150px;}
+    40% {left:4200px;}
+    50% {left:5250px;}
+    60% {left:6300px;}
+    70% {left:7350px;}
+    80% {left:8400px;}
+    90% {left:9450px;}
+    100% {left:10500px;}
+}
+
+.slide-images{
+    width: 11550px;
+    height: 400px;
+    margin: 0 0 0 -10500px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 101s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container{
+    height: 400px;
+    width: 1050px;
+    position: relative;
+    float: left;
+}

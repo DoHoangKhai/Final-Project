@@ -1,14 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
 
 body{
-    background: #3D3B30;
+    background: black;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.slider{
+    width: 100%;
+    height: 500px;
+    background-color: #101012;
 }
 
 #out{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+#out::before{
+    content: '';
+    position: absolute;
+    bottom: 60px;
+    width: 1920px;
+    height: 105px;
+    background: linear-gradient(to top, black, transparent);
 }
 
 .card{
@@ -41,6 +57,7 @@ body{
 
 .card img{
     width: 100%;
+    height: fit-content;
     background-color: #949B96;
     height: fit-content;
     border-radius: 5px;
@@ -57,17 +74,16 @@ body{
 
 .slider-frame{
     overflow: hidden;
-    height: 400px;
-    width: 848px;
-    margin-left: 225px;
-    margin-top: 20px;
-    background-color: #212227;
+    height: 500px;
+    width: 1920px;
+    background-color: #101012;
     border-radius: 2px;
+    margin-left: 200px;
 }
 
 .hov{
-    width: 848px;
-    height: 400px;
+    width: 850px;
+    height: 500px;
     background-color: aliceblue;
     position: absolute;
     top: 0%;
@@ -101,33 +117,33 @@ body{
 
 @-webkit-keyframes slide_animation{
     0% {left:0px;}
-    10% {left:1050px;}
-    20% {left:2100px;}
-    30% {left:3150px;}
-    40% {left:4200px;}
-    50% {left:5250px;}
-    60% {left:6300px;}
-    70% {left:7350px;}
-    80% {left:8400px;}
-    90% {left:9450px;}
-    100% {left:10500px;}
+    10% {left:1920px;}
+    20% {left:3840px;}
+    30% {left:5760px;}
+    40% {left:7680px;}
+    50% {left:9600px;}
+    60% {left:11520px;}
+    70% {left:13440px;}
+    80% {left:15360px;}
+    90% {left:17280px;}
+    100% {left:19200px;}
 }
 
 .slide-images{
-    width: 11550px;
-    height: 400px;
-    margin: 0 0 0 -10500px;
+    width: 21120px;
+    height: 500px;
+    margin: 0 0 0 -19200px;
     position: relative;
     -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 101s;
+    -webkit-animation-duration: 121s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
 }
 
 .img-container{
-    height: 400px;
-    width: 1050px;
+    height: 500px;
+    width: 1920px;
     position: relative;
     float: left;
 }

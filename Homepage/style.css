@@ -24,6 +24,17 @@ body{
     color: whitesmoke;
 }
 
+.info{
+    display: none;
+}
+
+.card:hover .info{
+    display: block;
+    z-index: 1;
+}
+
+
+
 .card:hover{
     transform: scale(1.1);
 }
@@ -32,6 +43,7 @@ body{
     width: 100%;
     background-color: #949B96;
     height: fit-content;
+    border-radius: 5px;
 }
 
 .card:hover .image{

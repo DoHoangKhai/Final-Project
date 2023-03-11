@@ -22,16 +22,23 @@ async function movie(){
     lists.forEach(element => {
         MovieBox = ""
         MovieSlide =""
+        Genre =""
         let name = element.jawSummary.title;
         let description = element.jawSummary.contextualSynopsis.text;
         let photo = element.jawSummary.backgroundImage.url; 
         let type = element.jawSummary.maturity.rating.value
         let logo = element.jawSummary.logoImage.url
 
+        for(let i = 0; i < element.jawSummary.genres.length; i++){
+            let kind = element.jawSummary.genres[i].name
+            let line = kind + ", "
+            Genre += line
+        }
+
         MovieBox = `
             <div class="card">
                 <img class="image" src="${logo}">
-                <div style="padding: 20px;">
+                <div style="padding: 20px;" class="info">
                     <h1>${name}</h1>
                     <h3>Rate: ${type}</h3>
                     <p>${description}</p>
@@ -43,7 +50,7 @@ async function movie(){
                 <img src="${photo}">
                 <div class="hov">
                     <h1>${name}</h1>
-                    <h3>Rate: ${type}</h3>
+                    <h3>Genre: ${Genre}</h3>
                     <p>${description}</p>
                 </div>
             </div>

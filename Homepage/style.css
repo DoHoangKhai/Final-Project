@@ -6,10 +6,12 @@ body{
     margin: 0;
 }
 
+
 .slider{
-    width: 100%;
+    width: 1050px;
     height: 500px;
     background-color: #101012;
+    overflow: hidden;
 }
 
 #out{
@@ -22,7 +24,7 @@ body{
     content: '';
     position: absolute;
     bottom: 60px;
-    width: 1920px;
+    width: 99%;
     height: 105px;
     background: linear-gradient(to top, black, transparent);
 }
@@ -46,7 +48,6 @@ body{
 
 .card:hover .info{
     display: block;
-    z-index: 1;
 }
 
 
@@ -75,7 +76,7 @@ body{
 .slider-frame{
     overflow: hidden;
     height: 500px;
-    width: 1920px;
+    width: 850px;
     background-color: #101012;
     border-radius: 2px;
     margin-left: 200px;
@@ -117,22 +118,22 @@ body{
 
 @-webkit-keyframes slide_animation{
     0% {left:0px;}
-    10% {left:1920px;}
-    20% {left:3840px;}
-    30% {left:5760px;}
-    40% {left:7680px;}
-    50% {left:9600px;}
-    60% {left:11520px;}
-    70% {left:13440px;}
-    80% {left:15360px;}
-    90% {left:17280px;}
-    100% {left:19200px;}
+    10% {left:1050px;}
+    20% {left:2100px;}
+    30% {left:3150px;}
+    40% {left:4200px;}
+    50% {left:5250px;}
+    60% {left:6300px;}
+    70% {left:7350px;}
+    80% {left:8400px;}
+    90% {left:9450px;}
+    100% {left:10500px;}
 }
 
 .slide-images{
-    width: 21120px;
+    width: 11550px;
     height: 500px;
-    margin: 0 0 0 -19200px;
+    margin: 0 0 0 -10500px;
     position: relative;
     -webkit-animation-name: slide_animation;
     -webkit-animation-duration: 121s;
@@ -143,7 +144,7 @@ body{
 
 .img-container{
     height: 500px;
-    width: 1920px;
+    width: 1050px;
     position: relative;
     float: left;
 }

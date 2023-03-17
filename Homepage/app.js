@@ -61,3 +61,11 @@ async function movie(){
 }
 
 movie()
+
+function contlog(){
+    location.replace("../ContactLog/")
+}
+
+function out(){
+    location.replace("../Mainpage/")
+}

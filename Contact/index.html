@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" >
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <a href="#" class="logo">NETFLIX</a>
         <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li onclick="contlog()"><a href="#">Contact</a></li>
-            <li onclick="out()"><a href="#">Logout</a></li>
-            <li onclick="contlog()"><a href="#">Contact</a></li>
+            <li onclick="home()"><a href="#">Home</a></li>
+            <li onclick="sign()"><a href="#">Sign in</a></li>
+            <li><a href="#" class="active">Contact</a></li>
         </ul>
     </header>
 
-    <div class="slider">
-        <div class="slider-frame">
-            <div class="slide-images" id="slide">   
+
+    <div class="blend">
+        <div class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Contact Us</h2>
+                    <input type="text" class="field" placeholder="Your Name">
+                    <input type="email" class="field" placeholder="Your Email">
+                    <input type="text" class="field" placeholder="Your Phone">
+                    <textarea class="field area" placeholder="Message"></textarea>
+                    <button class="btn">Send</button>
+                </div>
             </div>
         </div>
     </div>
-
-    <div id="out"></div>
     
     <footer>
         <div class="credit">
@@ -36,7 +44,6 @@
         <div class="about">
             <h1>About us</h1>
             <button>Contact</button>
-            <button onclick="out()">Logout</button>
         </div>
 
         <div class="tag">

@@ -1,5 +1,5 @@
-function cont(){
-    location.replace("../Contact/")
+function home(){
+    location.replace("../Mainpage/")
 }
 
 function sign(){

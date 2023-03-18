@@ -3,5 +3,5 @@ function home(){
 }
 
 function out(){
-    location.replace("../Mainpage/")
+    location.replace("../index.html")
 }

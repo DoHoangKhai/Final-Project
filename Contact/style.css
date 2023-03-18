@@ -9,7 +9,7 @@ body{
     width: 100%;
     height: 100vh;
     background-color: rgb(34, 34, 34);
-    background-image: url("https://cdn.arstechnica.net/wp-content/uploads/2022/07/netflix-800x450.jpg");
+    background-image: url("../Images/ContactCover1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

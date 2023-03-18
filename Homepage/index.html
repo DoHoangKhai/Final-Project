@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Lite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">NETFLIX</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li onclick="contlog()"><a href="#">Contact</a></li>
+            <li onclick="out()"><a href="#">Logout</a></li>
+            <li onclick="contlog()"><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="slider">
+        <div class="slider-frame">
+            <div class="slide-images" id="slide">   
+            </div>
+        </div>
+    </div>
+
+    <div id="out"></div>
+    
+    <footer>
+        <div class="credit">
+            <h1>Programmed by</h1>
+            <h4>Hoàng Khải <br> Đức Toàn <br> Minh Hùng <br> Bảo </h4>
+        </div>
+
+        <div class="about">
+            <h1>About us</h1>
+            <button>Contact</button>
+            <button onclick="out()">Logout</button>
+        </div>
+
+        <div class="tag">
+            <h1>Popular tag</h1>
+            <div class="hashtag">
+                <button class="hash">#Horror</button>
+                <button class="hash">#Adventure</button>
+                <button class="hash">#Comedy</button>
+                <button class="hash">#Mystery</button>
+                <button class="hash">#Romance</button>
+                <button class="hash">#Thriller</button>
+                <button class="hash">#Sports</button>
+                <button class="hash">#Musical</button>
+                <button class="hash">#Sci-fi</button>
+                <button class="hash">#Action</button>
+                <button class="hash">#Fantasy</button>
+                <button class="hash">#Western</button>
+                <button class="hash">#Crime</button>
+                <button class="hash">#Drama</button>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

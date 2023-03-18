@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" >
+    <title>Netflix Lite</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">NETFLIX</a>
+        <ul>
+            <li onclick="home()"><a href="#">Home</a></li>
+            <li onclick="sign()"><a href="#">Sign in</a></li>
+            <li><a href="#" class="active">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <div class="blend">
+        <div class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Contact Us</h2>
+                    <input type="text" class="field" placeholder="Your Name">
+                    <input type="email" class="field" placeholder="Your Email">
+                    <input type="text" class="field" placeholder="Your Phone">
+                    <textarea class="field area" placeholder="Message"></textarea>
+                    <button class="btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="person-info">
+            <div class="selfie"></div>
+            <div class="description">
+                <h1>Đỗ Hoàng Khải</h1>
+                <h4>Phân công: <br> - Làm trang chính <br> - Làm trang API <br> - Phụ trách Javascript</h4>
+            </div>
+        </div>
+
+        <div class="person-info">
+            <div class="selfie"></div>
+            <div class="description">
+                <h1>Dương Đức Toàn</h1>
+                <h4>Phân công: <br> - Làm header <br> - Làm Footer <br> - Trang đầu vào </h4>
+            </div>
+        </div>
+
+        <div class="person-info">
+            <div class="selfie"></div>
+            <div class="description">
+                <h1>Trần Lý Gia Bảo</h1>
+                <h4>Phân công: <br> - Làm trang Contact <br> - Trang trí Footer <br> - Trang trí Header </h4>
+            </div>
+        </div>
+
+        <div class="person-info">
+            <div class="selfie"></div>
+            <div class="description">
+                <h1>Nguyễn Minh Hùng</h1>
+                <h4>Phân công: <br> - Làm trang Login <br> - Phụ trách Javascript <br> - Trang trí Trang </h4>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="credit">
+            <h1>Programmed by</h1>
+            <h4>Hoàng Khải <br> Đức Toàn <br> Minh Hùng <br> Bảo </h4>
+        </div>
+
+        <div class="about">
+            <h1>About us</h1>
+            <button>Contact</button>
+        </div>
+
+        <div class="tag">
+            <h1>Popular tag</h1>
+            <div class="hashtag">
+                <button class="hash">#Horror</button>
+                <button class="hash">#Adventure</button>
+                <button class="hash">#Comedy</button>
+                <button class="hash">#Mystery</button>
+                <button class="hash">#Romance</button>
+                <button class="hash">#Thriller</button>
+                <button class="hash">#Sports</button>
+                <button class="hash">#Musical</button>
+                <button class="hash">#Sci-fi</button>
+                <button class="hash">#Action</button>
+                <button class="hash">#Fantasy</button>
+                <button class="hash">#Western</button>
+                <button class="hash">#Crime</button>
+                <button class="hash">#Drama</button>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

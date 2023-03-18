@@ -37,7 +37,7 @@ async function movie(){
 
         MovieBox = `
             <div class="card">
-                <img class="image" src="${logo}">
+                <img class="image" src="${photo}">
                 <div style="padding: 20px;" class="info">
                     <h1>${name}</h1>
                     <h3>Rate: ${type}</h3>
@@ -67,5 +67,5 @@ function contlog(){
 }
 
 function out(){
-    location.replace("../Mainpage/")
+    location.replace("../index.html")
 }

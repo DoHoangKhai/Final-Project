@@ -20,5 +20,5 @@ function cont(){
 }
 
 function home(){
-    location.replace("../Mainpage/")
+    location.replace("../index.html")
 }

@@ -1,7 +1,7 @@
 function cont(){
-    location.replace("../Contact/")
+    location.replace("./Contact/")
 }
 
 function sign(){
-    location.replace("../LoginFormat/")
+    location.replace("./LoginFormat/")
 }

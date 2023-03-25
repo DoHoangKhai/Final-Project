@@ -14,7 +14,6 @@ async function movie(){
 
     result = await data.json();
 
-    const n = result.titles.length;
     const lists = result.titles;
 
     console.log(result)
@@ -27,7 +26,6 @@ async function movie(){
         let description = element.jawSummary.contextualSynopsis.text;
         let photo = element.jawSummary.backgroundImage.url; 
         let type = element.jawSummary.maturity.rating.value
-        let logo = element.jawSummary.logoImage.url
 
         for(let i = 0; i < element.jawSummary.genres.length; i++){
             let kind = element.jawSummary.genres[i].name
